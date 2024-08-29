@@ -1,0 +1,22 @@
+.other-way-decoration-line {
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    top: 12px;
+    left: 0;
+    width: 30%;
+    background-color: $gray-200;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    top: 12px;
+    right: 0;
+    width: 30%;
+    background-color: $gray-200;
+  }
+}

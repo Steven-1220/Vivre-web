@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre 生活風格</title>
+    <%- include('./layout/favicon'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="register">
+      <div class="container py-12 py-md-19 border-top">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form
+              action=""
+              class="border border-primary-300 rounded-3 p-5 p-lg-9 bg-white needs-validation"
+              novalidate
+            >
+              <h2 class="text-accent-200 fs-md-4 fs-5 mb-5 mb-md-9">註冊</h2>
+              <div class="general-way mb-5 mb-md-9">
+                <div class="mb-3">
+                  <label for="account" class="form-label fw-bold"
+                    >會員帳號</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-2"
+                    id="account"
+                    placeholder="請輸入會員帳號"
+                    required
+                  />
+                  <div class="invalid-feedback">請輸入會員帳號</div>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label fw-bold">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control rounded-2"
+                    id="password"
+                    placeholder="請輸入密碼"
+                    required
+                  />
+                  <div class="invalid-feedback">請輸入密碼</div>
+                </div>
+                <div class="mb-5 mb-md-9">
+                  <label for="email" class="form-label fw-bold">電子信箱</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-2"
+                    id="email"
+                    placeholder="請輸入電子信箱"
+                    required
+                  />
+                  <div class="invalid-feedback">請輸入電子信箱</div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-accent-200 btn-primary-status link-light fs-6 py-2 px-3 w-100"
+                >
+                  立即註冊
+                  <i class="bi bi-arrow-right ms-2 fs-5"></i>
+                </button>
+              </div>
+              <div class="other-way mb-5 mb-md-9">
+                <div class="text-center text-gray-300 mb-5 mb-md-9">
+                  <span
+                    class="d-block px-2 other-way-decoration-line position-relative"
+                    >或以其他方式註冊</span
+                  >
+                </div>
+                <a href="#" class="btn btn-gray-100 fs-6 py-2 px-3 w-100 mb-1">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      src="../assets/images/icons-google.png"
+                      class="me-2"
+                      alt="google"
+                    />
+                    <span>使用 Google 註冊</span>
+                  </div>
+                </a>
+                <a href="#" class="btn btn-gray-100 fs-6 py-2 px-3 w-100">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      src="../assets/images/icons-facebook.png"
+                      class="me-2"
+                      alt="facebook"
+                    />
+                    <span>使用 Facebook 註冊</span>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="me-2">已經是會員了？</p>
+                <a href="login.html" class="link-accent-200">點此登入</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
