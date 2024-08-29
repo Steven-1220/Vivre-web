@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre 生活風格</title>
+    <link rel="shortcut icon" href="/Vivre-web/assets/logo-favicon-0b63247f.ico" type="image/x-icon">    <script type="module" crossorigin src="/Vivre-web/assets/main-0dba8dad.js"></script>
+    <link rel="stylesheet" href="/Vivre-web/assets/main-ebdc379a.css">
+  </head>
+  <body>
+    <header class="header bg-primary-100 sticky-top">
+  <nav class="navbar navbar-expand-md">
+    <div
+      class="container justify-content-between align-items-center py-lg-8 py-4"
+    >
+      <div
+        class="search-area d-flex justify-content-between align-items-center"
+      >
+        <h1 class="me-md-2 me-xl-8">
+          <a href="index.html" class="logo d-block">Vivre</a>
+        </h1>
+        <!-- pc 搜尋欄-->
+        <form
+          class="align-items-center border rounded-pill bg-white d-none d-md-flex"
+          role="search"
+        >
+          <span
+            class="fs-md-7 fs-lg-6 text-nowrap ps-md-2 ps-xl-4 text-gray-300"
+            >搜尋文章</span
+          >
+          <input
+            class="form-control py-md-1 py-lg-2 px-md-2 px-xl-4 bg-white border-0"
+            type="search"
+            id="search"
+            aria-label="Search"
+          />
+          <label for="search" class="d-flex align-items-center">
+            <i
+              class="bi bi-search fs-md-6 fs-xl-4 text-accent-200 ps-1 pe-md-2 pe-xl-4"
+            ></i>
+          </label>
+        </form>
+      </div>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburg-line"></span>
+        <span class="hamburg-line"></span>
+        <span class="hamburg-line"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse px-6 px-sm-15 px-md-0"
+        id="navbarContent"
+      >
+        <!-- pad mobil 搜尋欄 -->
+
+        <form
+          class="align-items-center border rounded-pill bg-white d-md-none d-flex w-100 mb-5"
+          role="search"
+        >
+          <span class="fs-6 text-nowrap px-4 text-gray-300">搜尋文章</span>
+          <input
+            class="form-control bg-white border-0"
+            type="search"
+            id="search"
+            aria-label="Search"
+          />
+          <label for="search" class="d-flex align-items-center">
+            <i class="bi bi-search fs-4 text-accent-200 px-2"></i>
+          </label>
+        </form>
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item me-xl-4 mb-5 mb-md-0">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              aria-current="page"
+              href="articles.html"
+              >所有文章</a
+            >
+          </li>
+          <li class="nav-item me-xl-4 mb-5 mb-md-0">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              href="subscription.html"
+              >訂閱方案</a
+            >
+          </li>
+          <li class="nav-item me-xl-4 me-md-2">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              href="aboutus.html"
+              >關於我們</a
+            >
+          </li>
+        </ul>
+        <a
+          class="btn btn-accent-200 btn-primary-status text-white w-100 w-md-auto py-lg-3 px-lg-5 fs-md-7 fs-lg-6 mt-9 mt-md-0"
+          href="register.html"
+        >
+          登入 / 註冊
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main class="subscription maintain-footer-bottom">
+      <div class="container pb-12 pt-3 pt-sm-7 py-md-19 border-top-md">
+        <div class="row">
+          <nav class="mb-1 mb-md-4">
+            <ol class="breadcrumb mb-0 py-2">
+              <li class="breadcrumb-item fs-md-6">
+                <a href="#" class="link-gray-400">首頁</a>
+              </li>
+              <li class="breadcrumb-item fs-md-6 active">訂閱方案</li>
+            </ol>
+          </nav>
+          <h2 class="fs-3 fs-md-1 mb-9 mb-md-12">訂閱方案</h2>
+        </div>
+
+        <div class="row justify-content-center mb-5 mb-lg-9">
+          <div class="col-md-6 col-lg-4">
+            <ul class="row nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="col-6 nav-item" role="presentation">
+                <button
+                  class="nav-link w-100 rounded-0 active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-monthly"
+                  type="button"
+                  role="tab"
+                >
+                  年繳
+                </button>
+              </li>
+              <li class="col-6 nav-item" role="presentation">
+                <button
+                  class="nav-link w-100 rounded-0"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-yearly"
+                  type="button"
+                  role="tab"
+                >
+                  月繳
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-monthly"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card bg-white p-5 p-lg-7 p-xl-9 rounded-3 h-100"
+                    >
+                      <div
+                        class="card-body text-center flex-grow-0 p-0 pb-lg-9 mb-8 mb-md-12"
+                      >
+                        <h4 class="fs-6 fs-md-6 mb-3">輕量型</h4>
+                        <h3 class="fs-5 fs-md-4">
+                          <strong class="fs-lg-2 fs-xl-1">NT 99</strong>
+                          <span> / 月</span>
+                        </h3>
+                      </div>
+                      <div class="card-body p-0 mb-12">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">每月最新文章無限閱讀</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">專屬會員限定內容</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">定期電子報</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <a
+                        href="payment.html"
+                        class="btn btn-subscription-custom py-md-3 fs-md-5 w-100 stretched-link"
+                      >
+                        我要訂閱
+                        <i class="bi bi-arrow-right ms-2 fs-md-4 fs-5"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card bg-white p-5 p-lg-7 p-xl-9 rounded-3 h-100"
+                    >
+                      <div
+                        class="card-body text-center flex-grow-0 p-0 pb-lg-9 mb-8 mb-md-12"
+                      >
+                        <h4 class="fs-6 fs-md-6 mb-3">玩咖型</h4>
+                        <h3 class="fs-5 fs-md-4">
+                          <strong class="fs-lg-2 fs-xl-1">NT 159</strong>
+                          <span> / 月</span>
+                        </h3>
+                      </div>
+                      <div class="card-body p-0 mb-12">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">每月最新文章無限閱讀</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">專屬會員限定內容</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">定期電子報</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">年度精選禮物</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <a
+                        href="payment.html"
+                        class="btn btn-subscription-custom py-md-3 fs-md-5 w-100 stretched-link"
+                      >
+                        我要訂閱
+                        <i class="bi bi-arrow-right ms-2 fs-md-4 fs-5"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card bg-white p-5 p-lg-7 p-xl-9 rounded-3 h-100"
+                    >
+                      <div
+                        class="card-body text-center flex-grow-0 p-0 mb-8 mb-md-12"
+                      >
+                        <h4 class="fs-6 fs-md-6 mb-3">家庭型</h4>
+                        <h3 class="fs-5 fs-md-4 mb-3">
+                          <strong class="fs-lg-2 fs-xl-1">NT 159</strong>
+                          <span> / 月</span>
+                        </h3>
+                        <h5 class="text-gray-300 discount-line">NT 899</h5>
+                      </div>
+                      <div class="card-body p-0 mb-12">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">每月最新文章無限閱讀</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">專屬會員限定內容</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">定期電子報</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">年度精選禮物</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">24/7 優先客戶服務</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">為每個成員量身打造專屬行程</p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i
+                              class="bi bi-check-square-fill fs-5 fs-md-4 me-1"
+                            ></i>
+                            <p class="fw-bold">最多 5 個家庭成員共享</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <a
+                        href="payment.html"
+                        class="btn btn-subscription-custom py-md-3 fs-md-5 w-100 stretched-link"
+                      >
+                        我要訂閱
+                        <i class="bi bi-arrow-right ms-2 fs-md-4 fs-5"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-yearly"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <h2 class="text-center text-info">目前暫時無月繳方案</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="container py-md-5 py-4 border-top border-gray-300">
+    <p class="text-center text-primary-400 fs-md-6 font-news-reader">
+      ©Vivre 2024 All right Reserved
+    </p>
+  </div>
+</footer>
+    
+  </body>
+</html>
