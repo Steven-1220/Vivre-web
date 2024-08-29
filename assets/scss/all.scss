@@ -9,7 +9,7 @@
 @import "bootstrap/scss/bootstrap";
 
 
-
+// 通用類
 @import './helpers/utilities';
 @import './helpers/utilities-modify';
 
@@ -18,9 +18,6 @@
 
 // 基本設定
 @import './base/base';
-
-
-// 通用類
 
 
 // 共用 layout
