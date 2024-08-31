@@ -55,7 +55,7 @@ const selectedArticleSwiper = new Swiper('.selectedArticleSwiper', {
 });
 
 const hotJourney = new Swiper('.hotJourney', {
-  modules: [Autoplay],
+  modules: [Navigation,Autoplay],
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
@@ -79,11 +79,10 @@ const tasteLife = new Swiper('.tasteLife', {
   slidesPerGroup: 2,
   spaceBetween: 24,
   navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
+    nextEl: ".swiper-next-life",
+    prevEl: ".swiper-prev-life",
   },
   breakpoints: {
-    
     992: {
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -135,6 +134,7 @@ function showSubscriptionArticle() {
   lockArticleInfo.classList.add('active')
 }
 
+// bootstrap 官網表單驗證
 (() => {
   'use strict'
 

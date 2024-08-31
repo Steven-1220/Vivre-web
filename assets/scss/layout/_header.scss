@@ -25,12 +25,14 @@
   .navbar-collapse {
     @include media-breakpoint-down(md) {
       background-color: $primary-100;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 97px;
       left: 0;
+      right: 0;
       height: calc(100vh - 97px);
       width: 100%;
-      z-index: 100;
+      z-index: 10;
+      transition: height 0.05s linear;
     }
   }
   .navbar-toggler:focus {
