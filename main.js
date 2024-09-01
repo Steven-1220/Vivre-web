@@ -151,3 +151,23 @@ function showSubscriptionArticle() {
     }, false)
   })
 })()
+
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+import { gsap } from "gsap";
+    
+import { TextPlugin } from "gsap/TextPlugin";
+
+
+gsap.registerPlugin(TextPlugin);
+
+// 自動打字效果
+gsap.to('.typing', {
+  text: '探索生活的無限可能',
+  duration: 3,
+  repeat: -1,
+});
