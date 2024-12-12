@@ -1,7 +1,6 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-
 // 漢堡選單按鈕動畫
 const hamburgerBtn = document.querySelector('.navbar-toggler');
 const body = document.querySelector('body');
@@ -36,26 +35,25 @@ const selectedArticleSwiper = new Swiper('.selectedArticleSwiper', {
   slidesPerGroup: 1,
   spaceBetween: 20,
   pagination: {
-    el: ".swiper-custom-pagination",
-    type: "fraction",
+    el: '.swiper-custom-pagination',
+    type: 'fraction',
   },
   navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
   },
   breakpoints: {
     // when window width is >= 576px
     576: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 24
+      spaceBetween: 24,
     },
-  }
-
+  },
 });
 
 const hotJourney = new Swiper('.hotJourney', {
-  modules: [Navigation,Autoplay],
+  modules: [Navigation, Autoplay],
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
@@ -63,24 +61,24 @@ const hotJourney = new Swiper('.hotJourney', {
     576: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 24
+      spaceBetween: 24,
     },
   },
   autoplay: {
     delay: 2000,
-    pauseOnMouseEnter: true
+    pauseOnMouseEnter: true,
   },
   loop: true,
 });
 
 const tasteLife = new Swiper('.tasteLife', {
-  modules: [Navigation,Autoplay],
+  modules: [Navigation, Autoplay],
   slidesPerView: 2,
   slidesPerGroup: 2,
   spaceBetween: 24,
   navigation: {
-    nextEl: ".swiper-next-life",
-    prevEl: ".swiper-prev-life",
+    nextEl: '.swiper-next-life',
+    prevEl: '.swiper-prev-life',
   },
   breakpoints: {
     992: {
@@ -91,7 +89,7 @@ const tasteLife = new Swiper('.tasteLife', {
 });
 
 const styleProposal = new Swiper('.styleProposal', {
-  modules: [Navigation,Autoplay],
+  modules: [Navigation, Autoplay],
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 24,
@@ -100,68 +98,70 @@ const styleProposal = new Swiper('.styleProposal', {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-
   },
   autoplay: {
     delay: 2000,
-    pauseOnMouseEnter: true
+    pauseOnMouseEnter: true,
   },
   loop: true,
 });
 
 const furtherReading = new Swiper('.furtherReading', {
-  modules: [Navigation,Autoplay],
+  modules: [Navigation, Autoplay],
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 24,
   autoplay: {
     delay: 2000,
-    pauseOnMouseEnter: true
+    pauseOnMouseEnter: true,
   },
   loop: true,
 });
-
 
 // 顯示訂閱文章
 const subscribeArticleBtn = document.querySelector('.subscribeArticle');
 const gradientCover = document.querySelector('.gradient-cover');
 const lockArticleInfo = document.querySelector('.lock-article-info');
 
-subscribeArticleBtn ? subscribeArticleBtn.addEventListener('click',showSubscriptionArticle) : 'null'
+subscribeArticleBtn
+  ? subscribeArticleBtn.addEventListener('click', showSubscriptionArticle)
+  : 'null';
 
 function showSubscriptionArticle() {
-  gradientCover.classList.add('active')
-  lockArticleInfo.classList.add('active')
+  gradientCover.classList.add('active');
+  lockArticleInfo.classList.add('active');
 }
 
 // bootstrap 官網表單驗證
 (() => {
-  'use strict'
+  'use strict';
 
-  const forms = document.querySelectorAll('.needs-validation')
+  const forms = document.querySelectorAll('.needs-validation');
 
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      'submit',
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
+        form.classList.add('was-validated');
+      },
+      false,
+    );
+  });
+})();
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init();
 
-import { gsap } from "gsap";
-    
-import { TextPlugin } from "gsap/TextPlugin";
+import { gsap } from 'gsap';
 
+import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
 

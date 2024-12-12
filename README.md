@@ -1,16 +1,52 @@
 # Vivre 生活風格內容訂閱網站
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+## 簡介
 
+> 此 Vivre 生活風格內容訂閱網站專案，主要使用 Vite 建立並搭配 Bootstrap 5 完成
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm run deploy` - 自動化部署
+## 網址
 
+[Vivre 生活風格](steven-1220.github.io/Vivre-web/)
 
+## 網站功能
+
+- 訂閱網站內容(個別分頁畫面)
+- 首頁 Bootstrap Navs and tabs 分頁切換
+- RWD 漢堡選單動畫
+
+## 使用技術
+
+- Vite
+- Bootstrap5 (包含使用 Bootstrap5 客製化)
+- SCSS
+- 模組化 CSS 檔案
+- RWD 響應式網頁
+- JavaScript
+
+## 使用套件
+
+- Swiper
+- gsap
+- aos
+
+## 畫面介紹
+
+### 首頁
+
+![首頁](https://i.imgur.com/DDrYzCL.png)
+
+### 文章頁面
+
+![文章頁面](https://i.imgur.com/EYRZrnD.png)
+
+### 關於我們頁面
+
+![關於我們頁面](https://i.imgur.com/AxJLezO.png)
+
+### 訂閱方案頁面
+
+![訂閱方案頁面](https://i.imgur.com/q2kIk5O.png)
+
+### 付款頁面
+
+![付款頁面](https://i.imgur.com/uythHID.png)
